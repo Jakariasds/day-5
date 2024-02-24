@@ -25,7 +25,13 @@ class personalInfo{
     public $firstName;
     public $lastName;
     public $age;
-}
+
+    // function __construct($fname,$lname){
+    //     $this->firstName = $fname;
+    //     $this->firstName = $lname;
+    }
+
+
 $personalInfo = new personalInfo();
 $personalInfo->firstName="Jakaria";
 $personalInfo->lastName = "Habib";
