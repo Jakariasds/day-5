@@ -26,15 +26,19 @@ class personalInfo{
     public $lastName;
     public $age;
 
-    // function __construct($fname,$lname){
-    //     $this->firstName = $fname;
-    //     $this->firstName = $lname;
+    function __construct($fname,$lname,$age){
+        $this->firstName = $fname;
+        $this->lastName = $lname;
+        $this->age = $age;
+        $this->personalInfo();
     }
+    function personalInfo(){
+        echo "My first name is {$this->firstName} and last name is {$this->lastName}. My age is {$this->age}.";
+    }     
+}
+$personalInfo = new personalInfo('Jakaria','Habib',28);
+// $personalInfo->firstName="Jakaria";
+// $personalInfo->lastName = "Habib";
+// $personalInfo->age=28;
 
-
-$personalInfo = new personalInfo();
-$personalInfo->firstName="Jakaria";
-$personalInfo->lastName = "Habib";
-$personalInfo->age=28;
-
-echo "My first name is {$personalInfo->firstName} and last name is {$personalInfo->lastName}. My age is {$personalInfo->age}.";
+// echo "My first name is {$personalInfo->firstName} and last name is {$personalInfo->lastName}. My age is {$personalInfo->age}.";
